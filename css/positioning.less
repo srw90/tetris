@@ -10,6 +10,8 @@
 }
 
 @defaultPos:-14em;
+@animationTime:2s;
+
 
 /* Positionierung */
 #F-T-01{
@@ -18,7 +20,7 @@
     transform: rotate(90deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-T-01 2s ease-in-out forwards;
+    animation:F-T-01 @animationTime linear forwards;
     .posAnimation(F-T-01, 30em);
 }
 
@@ -28,7 +30,7 @@
     transform: rotate(-180deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-T-02 2s 1s ease-in-out forwards;
+    animation:F-T-02 @animationTime 1s linear forwards;
     .posAnimation(F-T-02, 32em);
 }
 
@@ -38,7 +40,7 @@
     transform: rotate(-180deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-S-01 2s ease-in-out forwards;
+    animation:F-S-01 @animationTime linear forwards;
     .posAnimation(F-S-01, 30em);
 }
 
@@ -48,7 +50,7 @@
     transform: rotate(0deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-O-01 2s ease-in-out forwards;
+    animation:F-O-01 @animationTime linear forwards;
     .posAnimation(F-O-01, 34em);
 }
 
@@ -58,7 +60,7 @@
     transform: rotate(90deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-I-01 2s ease-in-out forwards;
+    animation:F-I-01 @animationTime linear forwards;
     .posAnimation(F-I-01, 28em);
 }
 
@@ -68,7 +70,7 @@
     transform: rotate(0deg) scaleX(-1);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-L-01 2s ease-in-out forwards;
+    animation:F-L-01 @animationTime linear forwards;
     .posAnimation(F-L-01, 32em);
 }
 
@@ -78,7 +80,7 @@
     transform: rotate(270deg) scaleX(-1);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-L-02 2s 1s ease-in-out forwards;
+    animation:F-L-02 @animationTime 1s linear forwards;
     .posAnimation(F-L-02, 28em);
 }
 
@@ -88,7 +90,7 @@
     transform: rotate(270deg) scaleX(-1);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-S-02 2s 1s ease-in-out forwards;
+    animation:F-S-02 @animationTime 1s linear forwards;
     .posAnimation(F-S-02, 24em);
 }
 
@@ -98,7 +100,7 @@
     transform: rotate(270deg) scaleX(-1);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-O-02 2s 1s ease-in-out forwards;
+    animation:F-O-02 @animationTime 1s linear forwards;
     .posAnimation(F-O-02, 28em);
 }
 
@@ -108,7 +110,7 @@
     transform: rotate(270deg) scaleX(-1);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-S-03 2s 1.5s ease-in-out forwards;
+    animation:F-S-03 @animationTime 1.5s linear forwards;
     .posAnimation(F-S-03, 24em);
 }
 
@@ -118,7 +120,7 @@
     transform: rotate(180deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-T-03 2s 1.5s ease-in-out forwards;
+    animation:F-T-03 @animationTime 1.5s linear forwards;
     .posAnimation(F-T-03, 26em);
 }
 
@@ -128,7 +130,7 @@
     transform: rotate(180deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-L-03 2s 1.5s ease-in-out forwards;
+    animation:F-L-03 @animationTime 1.5s linear forwards;
     .posAnimation(F-L-03, 28em);
 }
 
@@ -138,7 +140,7 @@
     transform: rotate(90deg);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-T-04 2s 2s ease-in-out forwards;
+    animation:F-T-04 @animationTime 2s linear forwards;
     .posAnimation(F-T-04, 26em);
 }
 
@@ -148,6 +150,6 @@
     transform: rotate(0deg) scaleX(-1);
     transform-origin: 0% 100%;
     top:@defaultPos;
-    animation:F-S-04 2s 2s ease-in-out forwards;
+    animation:F-S-04 @animationTime 2s linear forwards;
     .posAnimation(F-S-04, 28em);
 }
