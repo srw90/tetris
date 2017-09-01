@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>Tetris</title>
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet/less" type="text/css" href="css/masterstyles.less" />
-    <link rel="stylesheet/less" type="text/css" href="css/elements.css" />
+    <link rel="stylesheet/less" type="text/css" href="css/elements.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/positioning.less" />
     
     <!-- Javascript -->
     <script src="js/less.min.js" type="text/javascript"></script>
@@ -17,13 +18,26 @@
 <!-- BODY START -->
 <body>
     <div class="Playground">
-        <p>test</p>
-        <div class="form-T" id="F-S-01">
-  <div class="block form-T__block_1"></div>
-  <div class="block form-T__block_2"></div>
-  <div class="block form-T__block_3"></div>
-  <div class="block form-T__block_4"></div>
-</div>
+       
+        <!-- Tetris Logo -->
+        <div class="TetrisLogo">
+            <div class="TetrisLogo__Upper">
+                <span class="TetrisLogo__Text">TETRIS</span>
+            </div>
+            <div class="TetrisLogo__Under"></div>
+        </div>
+        <!-- Tetris Logo -->
+        
+        <!-- Start Button -->
+        <div class="StartButton">
+            <div class="StartButton__Block"><span class="StartButton__Text">S</span></div>
+            <div class="StartButton__Block"><span class="StartButton__Text">T</span></div>
+            <div class="StartButton__Block"><span class="StartButton__Text">A</span></div>
+            <div class="StartButton__Block"><span class="StartButton__Text">R</span></div>
+            <div class="StartButton__Block"><span class="StartButton__Text">T</span></div>
+        </div>
+        <!-- Start Button End -->
+        
     </div>
 </body>
 <!-- BODY END -->
