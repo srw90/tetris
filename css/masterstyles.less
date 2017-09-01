@@ -1,6 +1,93 @@
+body{
+    font-family: 'VT323', monospace;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+
 .Playground {
     width: 24em;
     height: 40em;
     background-color: black;
     box-sizing: border-box;
 }
+
+
+/* LOGO */
+
+@LogoBlock:6em;
+
+.TetrisLogo{
+    position: relative;
+    top: 8em;
+    margin: 0 3em;
+    box-sizing: border-box;
+    transform: scale(1);
+    
+    &__Text{
+        color: red;
+        font-size: calc(@LogoBlock/1.3);
+        letter-spacing: 0.2em;
+        line-height: 1.2em;
+        text-align: center;
+        padding-left: 0.1em;
+        width: 100%;
+        display: block;
+    }
+    
+    &__Upper, &__Under {
+        border: 2px solid red;
+        box-sizing: border-box;
+        background-color: deepskyblue;
+    }
+    
+    &__Upper{
+        width: calc(3*@LogoBlock);
+        height: @LogoBlock;
+        position: absolute;
+    }
+    
+    &__Under{
+        position: absolute;
+        width: @LogoBlock;
+        height: calc(1.5*@LogoBlock);
+        top: @LogoBlock;
+        left: @LogoBlock;
+        margin-top: -2px;
+        border-top-width: 0;
+        
+    }
+}
+
+/* LOGO END */
+
+/* START BUTTON */
+
+@ButtonBlock:4em;
+
+.StartButton {
+    width: calc(5*@ButtonBlock);
+    height: @ButtonBlock;
+    position: absolute;
+    top: 24em;
+    left: 2em;
+    
+    &__Block{
+        width: @ButtonBlock;
+        height: @ButtonBlock;
+        background-color: indianred;
+        display: inline-block;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 3px;
+        border:2px solid black;
+        padding-top: 0.2em;
+    }
+    
+    &__Text {
+        font-size: 3em;
+    }
+}
+
+/* START BUTTON END */
